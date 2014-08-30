@@ -25,13 +25,12 @@ class Mysql56WithQ4m < Formula
   option 'enable-local-infile', 'Build with local infile loading support'
   option 'enable-memcached', 'Enable innodb-memcached support'
   option 'enable-debug', 'Build with debug support'
-  option 'with-q4m-storage-engine', 'Compile with the Q4M storage engine enabled. http://q4m.github.io/'
 
   depends_on 'cmake' => :build
   depends_on 'pidof' unless MacOS.version >= :mountain_lion
   depends_on 'openssl'
 
-  conflicts_with 'mysql-cluster', 'mariadb', 'percona-server',
+  conflicts_with 'mysql', 'mysql-cluster', 'mariadb', 'percona-server',
     :because => "mysql, mariadb, and percona install the same binaries."
   conflicts_with 'mysql-connector-c',
     :because => 'both install MySQL client libraries'
@@ -104,11 +103,9 @@ class Mysql56WithQ4m < Formula
     # Build with debug support
     args << "-DWITH_DEBUG=1" if build.include? 'enable-debug'
 
-    if build.include? 'with-q4m-storage-engine'
-      resource('q4m').stage do
-        mkdir "#{buildpath}/storage/q4m"
-        cp_r Dir["*"], "#{buildpath}/storage/q4m/"
-      end
+    resource('q4m').stage do
+      mkdir "#{buildpath}/storage/q4m"
+      cp_r Dir["*"], "#{buildpath}/storage/q4m/"
     end
 
     system "cmake", *args
