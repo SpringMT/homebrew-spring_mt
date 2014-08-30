@@ -1,6 +1,15 @@
 # homebrew-spring_mt
+## dena-redis
+### install
 
 ## q4m
+### install
+
+```
+brew install https://raw.githubusercontent.com/SpringMT/homebrew-spring_mt/master/mysql56-with-q4m.rb
+brew install mysql56-with-q4m
+```
+### After install
 
 Please execute below SQL statements.
 
