@@ -14,6 +14,7 @@ class Mysql56WithQ4m < Formula
   resource 'q4m' do
     url 'http://q4m.kazuhooku.com/dist/q4m-0.9.14.tar.gz'
     version '0.9.14'
+    sha1 '7d865bd6588923fcf867e361eba99585d009d66a'
   end
 
   option :universal
@@ -134,11 +135,6 @@ class Mysql56WithQ4m < Formula
     libexec.mkpath
     mv "#{bin}/mysqlaccess", libexec
     mv "#{bin}/mysqlaccess.conf", libexec
-
-    if build.include? 'with-q4m-storage-engine'
-      mv "#{buildpath}/storage/q4m/install.sql", "#{prefix}/support-files/"
-      puts 'run storage/q4m/support-files/install.sql'
-    end
   end
 
   def post_install
