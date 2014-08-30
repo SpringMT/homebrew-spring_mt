@@ -2,6 +2,11 @@
 ## dena-redis
 ### install
 
+```
+brew install https://raw.githubusercontent.com/SpringMT/homebrew-spring_mt/master/dena-redis.rb
+brew install dena-redis
+```
+
 ## q4m
 ### install
 

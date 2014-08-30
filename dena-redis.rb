@@ -12,6 +12,8 @@ class DenaRedis < Formula
 
   #head 'https://github.com/antirez/redis.git', :branch => 'unstable'
 
+  conflicts_with 'redis', :because => 'Please delete default redis'
+
   fails_with :llvm do
     build 2334
     cause 'Fails with "reference out of range from _linenoise"'
