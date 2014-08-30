@@ -24,7 +24,7 @@ class Mysql56WithQ4m < Formula
   option 'enable-local-infile', 'Build with local infile loading support'
   option 'enable-memcached', 'Enable innodb-memcached support'
   option 'enable-debug', 'Build with debug support'
-  option 'with-q4a-storage-engine', 'Compile with the Q4A storage engine enabled. http://q4m.github.io/'
+  option 'with-q4m-storage-engine', 'Compile with the Q4M storage engine enabled. http://q4m.github.io/'
 
   depends_on 'cmake' => :build
   depends_on 'pidof' unless MacOS.version >= :mountain_lion
@@ -103,9 +103,10 @@ class Mysql56WithQ4m < Formula
     # Build with debug support
     args << "-DWITH_DEBUG=1" if build.include? 'enable-debug'
 
-    if build.include? 'with-q4a-storage-engine'
+    if build.include? 'with-q4m-storage-engine'
       resource('q4m').stage do
-        mv "q4m-#{version}", "storage/q4m"
+        mkdir "#{buildpath}/storage/q4m"
+        cp_r Dir["*"], "#{buildpath}/storage/q4m/"
       end
     end
 
@@ -134,9 +135,9 @@ class Mysql56WithQ4m < Formula
     mv "#{bin}/mysqlaccess", libexec
     mv "#{bin}/mysqlaccess.conf", libexec
 
-    if build.include? 'with-q4a-storage-engine'
-      mv 'storage/q4m/libqueue_engine.so', "#{prefix}/plugins"
-      p 'run storage/q4m/support-files/install.sql'
+    if build.include? 'with-q4m-storage-engine'
+      mv "#{buildpath}/storage/q4m/install.sql", "#{prefix}/support-files/"
+      puts 'run storage/q4m/support-files/install.sql'
     end
   end
 
