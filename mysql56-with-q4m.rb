@@ -2,8 +2,8 @@ require "formula"
 
 class Mysql56WithQ4m < Formula
   homepage "http://dev.mysql.com/doc/refman/5.6/en/"
-  url "https://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.24.tar.gz"
-  sha256 "37e27305b67d76883c5902dce59c89d596beee9dca7dbadd4a2e117f8101dfeb"
+  url "https://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.26.tar.gz"
+  sha256 "b44c6ce5f95172c56c73edfa8b710b39242ec7af0ab182c040208c41866e5070"
 
   bottle do
     sha256 "09add752ac02612bf95e696500e74fdfd281f54a98faf5ae49f135eb60c34f61" => :yosemite
