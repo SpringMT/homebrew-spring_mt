@@ -20,4 +20,10 @@ After installation and launching MySQL, please execute below commands.
 mysql -u root -e "$(curl -fsSL https://raw.githubusercontent.com/SpringMT/homebrew-spring_mt/master/q4m_install.sql)"
 ```
 
+## handlersocket
+### install
+
+```
+brew install https://raw.githubusercontent.com/SpringMT/homebrew-spring_mt/master/handlersocket.rb
+```
 
