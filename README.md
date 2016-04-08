@@ -27,3 +27,7 @@ mysql -u root -e "$(curl -fsSL https://raw.githubusercontent.com/SpringMT/homebr
 brew install https://raw.githubusercontent.com/SpringMT/homebrew-spring_mt/master/handlersocket.rb
 ```
 
+### setup
+SEE : https://github.com/DeNA/HandlerSocket-Plugin-for-MySQL/blob/master/docs-ja/installation.ja.txt#L57
+
+
