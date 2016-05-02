@@ -2,7 +2,7 @@ require "formula"
 
 class Mysql56WithQ4m < Formula
   homepage "http://dev.mysql.com/doc/refman/5.6/en/"
-  url "https://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.28.tar.gz"
+  url "https://cdn.mysql.com/archives/mysql-5.6/mysql-5.6.28.tar.gz"
   sha256 "217cd96921abdd709b9b4ff3ce2af4cbd237de43679cf19385d19df03a037b21"
 
   bottle do
