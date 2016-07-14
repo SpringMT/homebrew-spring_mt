@@ -9,7 +9,7 @@ class Cipherscan < Formula
   depends_on 'coreutils'
 
   def install
-    bin.install_symlink prefix/'cipherscan'
+    bin.install 'cipherscan'
   end
 
   def caveats; <<-EOS.undent
