@@ -30,4 +30,8 @@ brew install https://raw.githubusercontent.com/SpringMT/homebrew-spring_mt/maste
 ### setup
 SEE : https://github.com/DeNA/HandlerSocket-Plugin-for-MySQL/blob/master/docs-ja/installation.ja.txt#L57
 
+## cipherscan
 
+```
+brew install https://raw.githubusercontent.com/SpringMT/homebrew-spring_mt/master/cipherscan.rb
+```
