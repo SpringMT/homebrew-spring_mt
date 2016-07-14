@@ -2,7 +2,7 @@ require 'formula'
 
 class Cipherscan < Formula
   homepage 'https://github.com/jvehent/cipherscan'
-  head 'https://github.com/jvehent/cipherscan.git'
+  url 'https://github.com/jvehent/cipherscan.git'
 
   depends_on 'bash'
   depends_on 'coreutils'
