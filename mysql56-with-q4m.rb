@@ -14,7 +14,7 @@ class Mysql56WithQ4m < Formula
   resource 'q4m' do
     url 'http://q4m.kazuhooku.com/dist/q4m-0.9.14.tar.gz'
     version '0.9.14'
-    sha1 '7d865bd6588923fcf867e361eba99585d009d66a'
+    sha256 '26f6242fb56580a3bd16fd025012fac3b264be6269255532d1398273b1d7792a'
   end
 
   option :universal
