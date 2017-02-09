@@ -4,7 +4,7 @@ require 'tmpdir'
 class Handlersocket < Formula
   url 'https://github.com/DeNA/HandlerSocket-Plugin-for-MySQL/archive/1.1.2.tar.gz'
   homepage 'https://github.com/DeNA/HandlerSocket-Plugin-for-MySQL'
-  sha1 'fa329644b39fe8b17ed5469c7fac217ed8017ec3'
+  sha256 '79aafb1e46307d1b5c14d9c91aad1c39ac626432b6adcc2636a03f6a4ccce5fd'
 
   MYSQL_VERSION = '5.6.28'
 
