@@ -2,13 +2,13 @@ require "formula"
 
 class Mysql56WithQ4m < Formula
   homepage "http://dev.mysql.com/doc/refman/5.6/en/"
-  url "https://cdn.mysql.com/archives/mysql-5.6/mysql-5.6.28.tar.gz"
-  sha256 "217cd96921abdd709b9b4ff3ce2af4cbd237de43679cf19385d19df03a037b21"
+  url "https://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.34.tar.gz"
+  sha256 "ee90bafec6af3abe2715ccb0b3cc9345ed8d1cce025d41e6ec2b2b7a7d820823"
 
   bottle do
-    sha256 "09add752ac02612bf95e696500e74fdfd281f54a98faf5ae49f135eb60c34f61" => :yosemite
-    sha256 "b6ea5c4f3eebbfeba9710aeaedefe60f6a6b280b1a48834b9a5387d4df71fd5c" => :mavericks
-    sha256 "d1c79bbf500f6845b0b29f169267e80280f4993f8abf524fd2d888127347233d" => :mountain_lion
+    sha256 "e977aa8e72d36d4d3299e6185c98450b43501e6dcee541070e63700eac42e682" => :sierra
+    sha256 "d9ad86732265179cd7be92b2ec7b97fdd8977476ffc80477fed0143051c5963a" => :el_capitan
+    sha256 "7b45bbe87f2add631829d8c576e293870e52997847d0023787132a121b81bfe3" => :yosemite
   end
 
   resource 'q4m' do
