@@ -28,7 +28,7 @@ PATCH
     bin.install 'cipherscan'
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<-EOS
     cipherscan example.com
     EOS
   end
