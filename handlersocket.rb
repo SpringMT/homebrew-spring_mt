@@ -39,7 +39,7 @@ class Handlersocket < Formula
   end
 
   def caveats
-    <<-EOS.undent
+    <<-EOS
       To confirm successfuly installed, run the following command
       and confirm that 'handlersocket' is in the list:
          mysql> SHOW PLUGINS;
