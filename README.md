@@ -7,11 +7,16 @@ brew install https://raw.githubusercontent.com/SpringMT/homebrew-spring_mt/maste
 ```
 
 ## q4m
-### install
+### install with MySQL 5.6
 
 ```
 brew install https://raw.githubusercontent.com/SpringMT/homebrew-spring_mt/master/mysql56-with-q4m.rb
 ```
+### install with MySQL 5.7
+```
+brew install https://raw.githubusercontent.com/SpringMT/homebrew-spring_mt/master/mysql57-with-q4m.rb
+```
+
 ### After install
 
 After installation and launching MySQL, please execute below commands.
