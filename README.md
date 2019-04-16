@@ -13,6 +13,8 @@ brew install https://raw.githubusercontent.com/SpringMT/homebrew-spring_mt/maste
 brew install https://raw.githubusercontent.com/SpringMT/homebrew-spring_mt/master/mysql56-with-q4m.rb
 ```
 ### install with MySQL 5.7
+See https://github.com/q4m/q4m/pull/13
+
 ```
 brew install https://raw.githubusercontent.com/SpringMT/homebrew-spring_mt/master/mysql57-with-q4m.rb
 ```
