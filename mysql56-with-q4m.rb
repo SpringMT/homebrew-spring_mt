@@ -5,12 +5,6 @@ class Mysql56WithQ4m < Formula
   url "https://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-5.6.38.tar.gz"
   sha256 "18f249752f6c64af6e39c5b99c89ee1c86d6eb7fac853707603453cf584c54f3"
 
-  bottle do
-    sha256 "bef5d3a05ac6ba8505782e3d143515ead6bb5fcc839f64fd8f79f87f198547d8" => :high_sierra
-    sha256 "5486968846e866ac4225c7c725656f82537b20309710913fe444f05b3cfd1c4e" => :sierra
-    sha256 "c738a4e86dcc5a44b0cd738747315217d623101c8b1ca69007449c91313b35c7" => :el_capitan
-  end
-
   resource 'q4m' do
     url 'http://q4m.kazuhooku.com/dist/q4m-0.9.14.tar.gz'
     version '0.9.14'
