@@ -3,13 +3,13 @@ require "formula"
 class Mysql57WithQ4m < Formula
   desc "Open source relational database management system"
   homepage "https://dev.mysql.com/doc/refman/5.7/en/"
-  url "https://cdn.mysql.com/Downloads/MySQL-5.7/mysql-boost-5.7.25.tar.gz"
-  sha256 "354c427c8679c6a4774f60723ea211e54b4383307764d240940f960d110bf5cf"
+  url "https://cdn.mysql.com/Downloads/MySQL-5.7/mysql-boost-5.7.29.tar.gz"
+  sha256 "00f514124de2bad1ba7b380cbbd46e316cae7fc7bc3a5621456cabf352f27978"
 
   bottle do
-    sha256 "408e41e6b7db830398597db177df21ea28b55d37921e8a6a16d23e6f5e2333f7" => :mojave
-    sha256 "beb1712b9abc67079edec5bea5e3bcc93feb0fbee145d2f6b9a64d68de8f1187" => :high_sierra
-    sha256 "8f871039263343d57926723c8f593f52f741b39fe24230dce1d33a5afb0714d5" => :sierra
+    sha256 "bf0cdc294df996455c8abad3e03b6691f2145a4036085ad2570ec6c993e6b9c0" => :catalina
+    sha256 "88cf1f9f07a84694654f790507da937909eee1b16a0e47d473b2fc45e19c9ec1" => :mojave
+    sha256 "b4bf218448de13e40027117d3813d9a7a72d3205deb9658da16b85f74ad390af" => :high_sierra
   end
 
   resource 'q4m' do
