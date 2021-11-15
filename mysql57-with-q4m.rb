@@ -3,7 +3,7 @@ require "formula"
 class Mysql57WithQ4m < Formula
   desc "Open source relational database management system"
   homepage "https://dev.mysql.com/doc/refman/5.7/en/"
-  url "https://cdn.mysql.com/Downloads/MySQL-5.7/mysql-boost-5.7.32.tar.gz"
+  url "https://cdn.mysql.com/archives/mysql-5.7/mysql-boost-5.7.32.tar.gz"
   sha256 "9a8a04a2b0116ccff9a8d8aace07aaeaacf47329b701c5dfa9fa4351d3f1933b"
 
   resource 'q4m' do
